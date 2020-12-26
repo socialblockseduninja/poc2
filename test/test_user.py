@@ -24,11 +24,12 @@ class TestUser(unittest.TestCase):
     def test_get(self):
         """ The GET on `/user` should return an user """
         UserRepository.create(first_name="John", last_name="Doe", age=25)
-        print("response",response_json)
+
         response = self.client.get("/application/user/Doe/John")
 
         self.assertEqual(response.status_code, 200)
         response_json = json.loads(response.data.decode("utf-8"))
+        print("response",response_json)
         self.assertEqual(
             response_json,
             {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}},
