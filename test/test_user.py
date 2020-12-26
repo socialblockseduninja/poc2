@@ -62,7 +62,7 @@ class TestUser(unittest.TestCase):
         response_json = json.loads(response.data.decode("utf-8"))
         self.assertEqual(
             response_json,
-            {"user": {"age": 30, "first_name": "John", "last_name": "Doe"}},
+            {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}},
         )
         user = UserRepository.get(first_name="John", last_name="Doe")
-        self.assertEqual(user.age, 30)
+        self.assertEqual(user.age, 25)
