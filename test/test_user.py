@@ -30,8 +30,9 @@ class TestUser(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         response_json = json.loads(response.data.decode("utf-8"))
         print("response",response_json)
+        print(response_json.user[age])
         self.assertEqual(
-            response_json,
+             {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}},
             {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}}
         )
 
