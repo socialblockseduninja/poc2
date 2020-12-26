@@ -24,5 +24,5 @@ class UserRepository:
     def create(last_name, first_name, age):
         """ Create a new user """
          
-        out= json.dumps({"age": 25, "first_name": "John", "last_name": "Doe"})
+        out= json.dumps({"age": 30, "first_name": "John", "last_name": "Doe"})
         return out;
