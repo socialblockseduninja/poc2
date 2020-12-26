@@ -35,7 +35,7 @@ class TestUser(unittest.TestCase):
              {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}},
             {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}}
         )
-        print(response_json.user)
+ 
 
     def test_create(self):
         """ The POST on `/user` should create an user """
