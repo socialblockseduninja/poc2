@@ -14,10 +14,12 @@ class TestUser(unittest.TestCase):
 
     def setUp(self):
 #        db.create_all()
+        pass   
 
     def tearDown(self):
 #        db.session.remove()
 #        db.drop_all()
+         pass
 
     def test_get(self):
         """ The GET on `/user` should return an user """
