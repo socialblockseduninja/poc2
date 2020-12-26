@@ -19,7 +19,7 @@ class UserResource(Resource):
     def get(last_name, first_name):
         """ Return an user key information based on his name """
         user = UserRepository.get(last_name=last_name, first_name=first_name)
-        return jsonify({"user": user})
+        return jsonify( user)
 
     @staticmethod
     @parse_params(
@@ -31,7 +31,7 @@ class UserResource(Resource):
         user = UserRepository.create(
             last_name=last_name, first_name=first_name, age=age
         )
-        return jsonify({"user": user})
+        return jsonify( user)
 
     @staticmethod
     @parse_params(
@@ -42,4 +42,4 @@ class UserResource(Resource):
         """ Update an user based on the sent information """
         repository = UserRepository()
         user = repository.update(last_name=last_name, first_name=first_name, age=age)
-        return jsonify({"user": user})
+        return jsonify(  user}
