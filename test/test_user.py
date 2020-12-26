@@ -31,7 +31,7 @@ class TestUser(unittest.TestCase):
         response_json = json.loads(response.data.decode("utf-8"))
         print("response",response_json)
         print(type(response_json))
-        temp='{"user": {"age": 25, "first_name": "John", "last_name": "Doe"}}'
+        temp='{"user": {"age": 30, "first_name": "John", "last_name": "Doe"}}'
         print(type(temp))
         self.assertEqual( response_json,temp) 
 
