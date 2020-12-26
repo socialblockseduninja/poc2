@@ -24,6 +24,7 @@ class TestUser(unittest.TestCase):
     def test_get(self):
         """ The GET on `/user` should return an user """
         UserRepository.create(first_name="John", last_name="Doe", age=25)
+        print(response_json)
         response = self.client.get("/application/user/Doe/John")
 
         self.assertEqual(response.status_code, 200)
@@ -43,11 +44,12 @@ class TestUser(unittest.TestCase):
 
         self.assertEqual(response.status_code, 200)
         response_json = json.loads(response.data.decode("utf-8"))
+        print(response_json)
         self.assertEqual(
             response_json,
             {"user": {"age": 30, "first_name": "John", "last_name": "Doe"}},
         )
-        self.assertEqual(User.query.count(), 1)
+      
 
     def test_update(self):
         """ The PUT on `/user` should update an user's age """
