@@ -1,0 +1,41 @@
+INFO: 26/12/20 12:02:40         pid:1 module:_internal  * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+INFO: 26/12/20 12:02:40         pid:1 module:_internal  * Restarting with stat
+WARNING: 26/12/20 12:02:40         pid:8 module:_internal  * Debugger is active!
+INFO: 26/12/20 12:02:41         pid:8 module:_internal  * Debugger PIN: 149-587-543
+INFO: 26/12/20 12:02:51         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 12:02:51] "[37mGET /apidocs/ HTTP/1.1[0m" 200 -
+INFO: 26/12/20 12:02:51         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 12:02:51] "[37mGET /apidocs/favicon-32x32.png HTTP/1.1[0m" 200 -
+INFO: 26/12/20 12:02:51         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 12:02:51] "[37mGET /application/spec HTTP/1.1[0m" 200 -
+INFO: 26/12/20 12:03:05         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 12:03:05] "[1m[35mGET /application/user/john/doe HTTP/1.1[0m" 500 -
+INFO: 26/12/20 12:03:27         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 12:03:27] "[1m[35mGET /application/user/john/doe HTTP/1.1[0m" 500 -
+INFO: 26/12/20 12:05:11         pid:8 module:_internal 143.110.252.14 - - [26/Dec/2020 12:05:11] "[1m[35mGET /application/user/john/doe HTTP/1.1[0m" 500 -
+INFO: 26/12/20 12:11:18         pid:8 module:_internal  * Detected change in '/mnt/src/repositories/user.py', reloading
+INFO: 26/12/20 12:11:18         pid:1 module:_internal  * Restarting with stat
+WARNING: 26/12/20 12:11:19         pid:19 module:_internal  * Debugger is active!
+INFO: 26/12/20 12:11:19         pid:19 module:_internal  * Debugger PIN: 149-587-543
+INFO: 26/12/20 12:11:34         pid:19 module:_internal 143.110.252.14 - - [26/Dec/2020 12:11:34] "[1m[35mGET /application/user/john/doe HTTP/1.1[0m" 500 -
+INFO: 26/12/20 12:18:56         pid:19 module:_internal  * Detected change in '/mnt/src/repositories/user.py', reloading
+INFO: 26/12/20 12:18:56         pid:1 module:_internal  * Restarting with stat
+WARNING: 26/12/20 12:18:57         pid:24 module:_internal  * Debugger is active!
+INFO: 26/12/20 12:18:57         pid:24 module:_internal  * Debugger PIN: 149-587-543
+INFO: 26/12/20 12:19:44         pid:24 module:_internal  * Detected change in '/mnt/src/repositories/user.py', reloading
+INFO: 26/12/20 12:19:44         pid:1 module:_internal  * Restarting with stat
+WARNING: 26/12/20 12:19:44         pid:28 module:_internal  * Debugger is active!
+INFO: 26/12/20 12:19:44         pid:28 module:_internal  * Debugger PIN: 149-587-543
+INFO: 26/12/20 12:20:08         pid:28 module:_internal  * Detected change in '/mnt/src/resources/user.py', reloading
+INFO: 26/12/20 12:20:08         pid:1 module:_internal  * Restarting with stat
+WARNING: 26/12/20 12:20:08         pid:32 module:_internal  * Debugger is active!
+INFO: 26/12/20 12:20:08         pid:32 module:_internal  * Debugger PIN: 149-587-543
+INFO: 26/12/20 12:22:53         pid:32 module:_internal  * Detected change in '/mnt/src/resources/user.py', reloading
+INFO: 26/12/20 12:22:53         pid:1 module:_internal  * Restarting with stat
+WARNING: 26/12/20 12:22:54         pid:36 module:_internal  * Debugger is active!
+INFO: 26/12/20 12:22:54         pid:36 module:_internal  * Debugger PIN: 149-587-543
+INFO: 26/12/20 14:52:06         pid:1 module:_internal  * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+INFO: 26/12/20 14:52:06         pid:1 module:_internal  * Restarting with stat
+WARNING: 26/12/20 14:52:07         pid:8 module:_internal  * Debugger is active!
+INFO: 26/12/20 14:52:07         pid:8 module:_internal  * Debugger PIN: 149-587-543
+INFO: 26/12/20 14:52:58         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 14:52:58] "[33mGET / HTTP/1.1[0m" 404 -
+INFO: 26/12/20 14:52:58         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 14:52:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO: 26/12/20 14:53:19         pid:8 module:_internal 143.110.252.14 - - [26/Dec/2020 14:53:19] "[37mGET /application/user/john/doe HTTP/1.1[0m" 200 -
+INFO: 26/12/20 14:53:39         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 14:53:39] "[37mGET /apidocs/ HTTP/1.1[0m" 200 -
+INFO: 26/12/20 14:53:39         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 14:53:39] "[37mGET /application/spec HTTP/1.1[0m" 200 -
+INFO: 26/12/20 14:53:51         pid:8 module:_internal 106.197.24.4 - - [26/Dec/2020 14:53:51] "[37mGET /application/user/jop/d HTTP/1.1[0m" 200 -
