@@ -32,7 +32,7 @@ class TestUser(unittest.TestCase):
         print("response",response_json)
         self.assertEqual(
             response_json,
-            {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}},
+            {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}}
         )
 
     def test_create(self):
@@ -48,7 +48,7 @@ class TestUser(unittest.TestCase):
         print("response",response_json)
         self.assertEqual(
             response_json,
-            {"user": {"age": 30, "first_name": "John", "last_name": "Doe"}},
+            {"user": {"age": 30, "first_name": "John", "last_name": "Doe"}}
         )
       
 
@@ -66,7 +66,7 @@ class TestUser(unittest.TestCase):
         print("response",response_json)        
         self.assertEqual(
             response_json,
-            {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}},
+            {"user": {"age": 25, "first_name": "John", "last_name": "Doe"}}
         )
         user = UserRepository.get(first_name="John", last_name="Doe")
         self.assertEqual(user.age, 25)
