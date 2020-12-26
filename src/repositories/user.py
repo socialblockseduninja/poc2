@@ -10,19 +10,19 @@ class UserRepository:
     def get(last_name, first_name):
         """ Query a user by last and first name """
         out=  '{"age": 25, "first_name": "John", "last_name": "Doe"}'
-        return json.dumps({"age": 25, "first_name": "John", "last_name": "Doe"});
+        return json.dumps({"user": {"age": 30, "first_name": "John", "last_name": "Doe"}});
 
 
     def update(self, last_name, first_name, age):
         """ Update a user's age """
         user = self.get(last_name, first_name)
         user.age = age
-        out= json.dumps( {"age": 25, "first_name": "John", "last_name": "Doe"})
+        out= json.dumps( {"user": {"age": 30, "first_name": "John", "last_name": "Doe"}})
         return out;
 
     @staticmethod
     def create(last_name, first_name, age):
         """ Create a new user """
          
-        out= json.dumps({"age": 30, "first_name": "John", "last_name": "Doe"})
+        out= json.dumps({"user": {"age": 30, "first_name": "John", "last_name": "Doe"}})
         return out;
