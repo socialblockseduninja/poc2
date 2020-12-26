@@ -42,4 +42,4 @@ class UserResource(Resource):
         """ Update an user based on the sent information """
         repository = UserRepository()
         user = repository.update(last_name=last_name, first_name=first_name, age=age)
-        return jsonify(  user}
+        return jsonify(  user)
