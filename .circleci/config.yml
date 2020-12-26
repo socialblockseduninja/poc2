@@ -13,7 +13,7 @@ jobs:
       - DEBUG_MODE: "True"
     steps:
       - checkout
-       - run:
+      - run:
           name: Install Python requirements
           command: |
             python3 -m venv venv
